@@ -5,7 +5,7 @@ const product_card = [
         description: "8GB/256GB",
         price: 250,
         currency: "€",
-        thumb: "./images/1.png"
+        picture: "./images/1.png"
     },
     {
         id: 2,
@@ -13,63 +13,63 @@ const product_card = [
         description: "2GB/32GB",
         price: 90,
         currency: "€",
-        thumb: "./images/2.png"
+        picture: "./images/2.png"
     },
     {
         id: 3,
-        product_name: "Rayes X30",
-        description: "Hands-free, Hads-on Mushc Experience",
-        price: 350,
+        product_name: "Xiaomi Redmi 9C NFC",
+        description: "2GB/32GB",
+        price: 100,
         currency: "€",
-        thumb: "./images/3.png"
+        picture: "./images/3.png"
     },
     {
         id: 4,
-        product_name: "Rayes Alpha",
-        description: "Hands-free, Hads-on Mushc Experience",
-        price: 350,
+        product_name: "Xiaomi Redmi Note 10 pro",
+        description: "6GB/64GB",
+        price: 250,
         currency: "€",
-        thumb: "./images/4.png"
+        picture: "./images/4.png"
     },
     {
         id: 5,
-        product_name: "Rayes Z30",
-        description: "Hands-free, Hads-on Mushc Experience",
-        price: 250,
+        product_name: "Xiaomi Redmi 9C NFC",
+        description: "4GB/128GB",
+        price: 200,
         currency: "€",
-        thumb: "./images/5.png"
+        picture: "./images/5.png"
     },
     {
         id: 6,
-        product_name: "Rayes X30",
-        description: "Hands-free, Hads-on Mushc Experience",
-        price: 350,
+        product_name: "Xiaomi Redmi Note 9 Pro",
+        description: "6GB/64GB",
+        price: 200,
         currency: "€",
-        thumb: "./images/6.png"
+        picture: "./images/6.png"
     },
     {
         id: 7,
-        product_name: "Rayes Alpha",
-        description: "Hands-free, Hads-on Mushc Experience",
-        price: 350,
+        product_name: "Xiaomi Redmi Note 9T 5G",
+        description: "4GB/128GB",
+        price: 250,
         currency: "€",
-        thumb: "./images/7.png"
+        picture: "./images/7.png"
     },
     {
         id: 8,
-        product_name: "Rayes Z30",
-        description: "Hands-free, Hads-on Mushc Experience",
-        price: 250,
+        product_name: "Xiaomi Redmi 9T",
+        description: "4GB/64GB",
+        price: 170,
         currency: "€",
-        thumb: "./images/8.png"
+        picture: "./images/8.png"
     },
     {
         id: 9,
-        product_name: "Rayes X30",
-        description: "Hands-free, Hads-on Mushc Experience",
-        price: 350,
+        product_name: "Xiaomi Redmi Note 10",
+        description: "4GB/128GB",
+        price: 250,
         currency: "€",
-        thumb: "./images/9.png"
+        picture: "./images/9.png"
     }
 ]
 export default product_card;
