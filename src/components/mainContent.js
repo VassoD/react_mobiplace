@@ -20,7 +20,7 @@ const MainContent = () => {
     );
     return (
         <div className="main_content">
-            <h3>Mobiles</h3>
+            {/* <h3>Mobiles</h3> */}
             {listItems}
             {addItem}
         </div>
