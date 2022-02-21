@@ -171,6 +171,7 @@ nav .search .fa + .fa {
   color: #fff;
 }
 
+
 .btn {
   width: 130px;
   height: 35px;
@@ -210,3 +211,6 @@ nav .search .fa + .fa {
 }
 /*# sourceMappingURL=App.css.map */
 
+a{
+  text-decoration: none;
+}

@@ -3,8 +3,8 @@ import './App.css';
 import Header from "./components/header";
 import Home from "./Home";
 import Footer from "./components/footer";
-import Cart from "./components/Cart";
-import {CartProvider} from "react-use-cart";
+// import Cart from "./components/Cart";
+// import {CartProvider} from "react-use-cart";
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
     <div className="container">
       <Header />
       <Home />
-      <CartProvider>
+      {/* <CartProvider>
         <Cart />
-      </CartProvider>
+      </CartProvider> */}
       <Footer />
     </div>
   );

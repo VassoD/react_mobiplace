@@ -26,7 +26,7 @@ const product_card = [
     {
         id: 4,
         product_name: "Xiaomi Redmi Note 10 pro",
-        description: "6GB/64GB",
+        description: "8GB RAM/256GB storage",
         price: 250,
         currency: "€",
         picture: "./images/4.png"
