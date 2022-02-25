@@ -9,7 +9,6 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  RoutesProps,
 } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Products from "./components/products";

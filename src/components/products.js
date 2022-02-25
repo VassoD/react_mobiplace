@@ -11,9 +11,9 @@ function Products() {
       item.product_name.replace(" ", "+");
     return (
       <div className="card" key={item.id}>
-        <a href={searchYoutube} target="_blank">
+        <a href={searchYoutube} target="_blank" rel='noreferrer'>
           <div className="card_img">
-            <img src={item.picture} />
+            <img src={item.picture} alt="mobile"/>
           </div>
         </a>
         <div className="card_header">
