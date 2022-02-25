@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp} from '@fortawesome/free-solid-svg-icons'
 import { faThumbsDown} from '@fortawesome/free-solid-svg-icons'
+import ls from 'local-storage'
 
 
 class Likes extends React.Component {
@@ -67,10 +68,15 @@ class Likes extends React.Component {
   render(){
 
     return(
-      <div>
-      <FontAwesomeIcon  icon={faThumbsUp } size="lg" onClick={this.updateLikes}  />
-      <FontAwesomeIcon icon={faThumbsDown}  size="lg" onClick={this.updateDislikes} />
-      <p>{this.state.likes} {this.state.dislikes}</p>
+     <div className="icons">
+     <div>
+        <FontAwesomeIcon  icon={faThumbsUp } size="lg" onClick={this.updateLikes}  />
+        <FontAwesomeIcon icon={faThumbsDown} pull="right"  size="lg" onClick={this.updateDislikes} />
+      </div>
+      <div className="numberLikes">
+        <div className="nlikes">{this.state.likes}</div>
+        <div className="nlikes"> {this.state.dislikes}</div>
+      </div>
       </div>
     );
   }

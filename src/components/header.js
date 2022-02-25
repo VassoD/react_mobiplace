@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 export default function Header() {
     return (
         <nav>
@@ -10,10 +11,10 @@ export default function Header() {
                 {/* <li>About Us</li> */}
                 <li>Contact</li>
             </ul>
-            <div className="search">
+            {/* <div className="search">
                 <i className="fa fa-search"></i>
                 <i className="fa fa-shopping-basket"></i>
-            </div>
+            </div> */}
         </nav>
     )
 }

@@ -1,12 +1,9 @@
 import React from 'react';
-import MainContent from "./components/mainContent";
 
 
-const Home = () => {
-    
-    return(
-                <MainContent/> 
-    )}
+function Home () {
+    return <div>Hello </div>
+}
 
 
 export default Home;
