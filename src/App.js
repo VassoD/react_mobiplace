@@ -12,6 +12,8 @@ import {
 } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Products from "./components/products";
+// import Contact from "./components/contact";
+// import "semantic-ui-css/semantic.min.css";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Products" element={<Products />} />
+        {/* <Route exact path="/Contact" element={<Contact />} /> */}
+
       </Routes>
       <Footer/>
     </Router>
