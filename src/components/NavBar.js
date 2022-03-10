@@ -10,7 +10,7 @@ function NavBar() {
       <div className="rightside">
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
-        {/* <Link to="/contact">Contact</Link> */}
+        <Link to="/contact">Contact</Link>
       </div>
     </div>
   );

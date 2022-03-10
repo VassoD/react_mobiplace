@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,16 +12,22 @@ body {
   font-family: "Varela Round";
 }
 
-.dFlex, .main_content, .main_content .card, .main_content .card .card_header, .btn, .footer, .footer .social{
+.dFlex,
+.main_content,
+.main_content .card,
+.main_content .card .card_header,
+.btn,
+.footer,
+.footer .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .container {
@@ -30,35 +36,40 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 30px 50px 20px 50px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: rgb(8, 8, 8);
 }
 
-.intro img{
+.intro img {
   width: 600px;
 }
 
-.home_content h1,h2,h3,p{
+.home_content h1,
+h2,
+h3,
+p {
   color: #fff;
 }
+
 .App {
   text-align: center;
   max-width: 300px;
   margin: 20px auto;
 }
+
 Form {
   border: 1px solid lightgray;
   border-radius: 10px;
   padding: 20px;
 }
 
-.intro a{
+.intro a {
   color: #ffffff;
   border-radius: 10px;
   border: 1px solid #fff;
@@ -66,23 +77,24 @@ Form {
   color: #fe8033;
 
 }
-.intro a:hover{
+
+.intro a:hover {
   color: #fff;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 
-.home_content h1 a{
+.home_content h1 a {
   color: #FF0000;
   border: 0px;
 
 }
 
-.goto{
+.goto {
   font-size: 15px;
 }
 
-.goto a{
+.goto a {
   color: #fe8033;
 }
 
@@ -135,12 +147,12 @@ nav .search .fa + .fa {
   margin: 50px auto;
   padding: 50px 0 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .main_content h3 {
@@ -157,11 +169,11 @@ nav .search .fa + .fa {
   border-radius: 15px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: relative;
   -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   margin-bottom: 50px;
@@ -178,8 +190,8 @@ nav .search .fa + .fa {
 .main_content .card .card_header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #fff;
   margin: 25px 0;
 }
@@ -209,7 +221,7 @@ nav .search .fa + .fa {
 .main_content .card:hover {
   background-color: #2b3039;
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -236,8 +248,8 @@ nav .search .fa + .fa {
 .footer {
   width: 100%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: auto;
   color: rgba(255, 255, 255, 0.3);
   font-size: 12px;
@@ -253,38 +265,39 @@ nav .search .fa + .fa {
   cursor: pointer;
 }
 
-.footer .social .fa + .fa {
+.footer .social .fa+.fa {
   margin-left: 15px;
 }
+
 /*# sourceMappingURL=App.css.map */
 
-a{
+a {
   text-decoration: none;
 }
 
-.numberLikes{
-  display: grid ;
+.numberLikes {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3em;
 }
 
-.home_content{
+.home_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   padding: 30px 50px 20px 50px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* background-color: rgb(8, 8, 8); */
 }
 
-.home_content .intro{
+.home_content .intro {
   flex: 100%;
   height: 100%;
   display: flex;
@@ -294,7 +307,7 @@ a{
   justify-content: flex-start;
 }
 
-.home_content .intro2{
+.home_content .intro2 {
   flex: 100%;
   height: 100%;
   display: flex;
@@ -304,7 +317,7 @@ a{
   justify-content: flex-start;
 }
 
-.intro2 img{
+.intro2 img {
   width: 300px;
 }
 
@@ -339,10 +352,10 @@ a{
   margin: 20px;
 }
 
-.footer{
+.footer {
   width: 100%;
   height: 80px;
-  background-color:  #121619;
+  background-color: #121619;
   display: flex;
   flex-direction: row;
 }
@@ -372,7 +385,85 @@ a{
 
 
 
-
-#root{
+#root {
   background-color: black;
 }
+
+
+.formmain {
+  flex: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.leftcontact img {
+  width: 200px;
+  margin: 15rem;
+}
+
+.main-form {
+  flex: 100%;
+  height: 100%;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.main-form h1 {
+  color: #fff;
+  margin-left: 2rem;
+}
+
+input {
+  border: none;
+  border-bottom: 0.1rem solid #e6e6e6;
+  border-radius: 3px;
+  width: 90%;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  padding: 0.7rem 0;
+  outline: none;
+  margin-left: 2rem;
+}
+
+label {
+  color: grey;
+  font-size: 1.1rem;
+  margin-left: 2rem;
+
+
+}
+
+::placeholder {
+  color: #cccccc;
+  font-size: 1rem;
+}
+
+textarea {
+  border: none;
+  border-bottom: 0.1rem solid #e6e6e6;
+  width: 90%;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  border-radius: 3px;
+}
+
+#submit {
+  height: 3.2rem;
+  width: 14rem;
+  font-size: 1.2rem;
+  background: linear-gradient(to right, #b42714, #ff5050);
+  margin-left: 35%;
+  margin-top: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.4em;
+}
+
+.form-element {
+  margin-top: 0.5rem;
+}
+
