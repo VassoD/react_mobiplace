@@ -66,7 +66,7 @@ function Contact() {
         
         <div className="form-element">
           <label>Email</label>  <br/>
-          <Input hint="Enter your Email ID" type="email" ID="email"/> 
+          <Input hint="Enter your email" type="email" ID="email"/> 
         </div>
         
         {/* <div className="form-element">
