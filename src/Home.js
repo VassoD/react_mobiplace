@@ -6,7 +6,8 @@ function Home() {
       <div className="intro">
         <h1>
           Welcome to Mobiplace, the place where you can see reviews for any 
-          mobile of your choice on<a href="https://www.youtube.com" target="_blank" rel='noreferrer'>Youtube</a> and understand it better. 
+          mobile of your choice on<a href="https://www.youtube.com" target="_blank" rel='noreferrer'>Youtube</a><br>
+          and understand it better. 
         </h1>
         <a href="./products">Check the mobiles!</a>
         <img src="./images/figure.png" alt="figure"></img>
