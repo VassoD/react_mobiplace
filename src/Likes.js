@@ -2,7 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsDown } from "@fortawesome/free-solid-svg-icons";
-// import ls from 'local-storage'
 
 class Likes extends React.Component {
   constructor(props) {

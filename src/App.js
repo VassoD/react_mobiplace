@@ -31,7 +31,7 @@ function App() {
         <Route exact path="/Contact" element={<Contact />} />
 
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }

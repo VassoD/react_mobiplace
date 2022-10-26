@@ -79,7 +79,6 @@ function Contact() {
           <textarea id="msg" rows="5" placeholder="Questions/comments...">
             </textarea> 
         </div>
-        
         <Button ID="submit">Submit</Button>
         </form>
     </div>
