@@ -75,7 +75,6 @@ Form {
   border: 1px solid #fff;
   padding: 7px;
   color: #fe8033;
-
 }
 
 .intro a:hover {
@@ -87,7 +86,7 @@ Form {
 }
 
 .home_content h1 a {
-  color: #FF0000;
+  color: #ff0000;
   border: 0px;
 }
 
@@ -102,8 +101,6 @@ Form {
 .goto a {
   color: #fe8033;
 }
-
-
 /* nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -116,34 +113,6 @@ Form {
   font-size: 30px;
   color: #fe8033;
 }
-
-/* nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav ul li {
-  font-size: 14px;
-  margin-left: 20px;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: rgba(255, 255, 255, 0.7);
-  cursor: pointer;
-}
-
-nav .search {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-nav .search .fa {
-  cursor: pointer;
-}
-
-nav .search .fa + .fa {
-  margin-left: 15px;
-} */
 
 .main_content {
   position: relative;
@@ -168,7 +137,6 @@ nav .search .fa + .fa {
   font-size: 13.5vw;
 }
 
-
 .main_content .card {
   width: 30%;
   border-radius: 15px;
@@ -179,8 +147,8 @@ nav .search .fa + .fa {
   position: relative;
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-bottom: 50px;
 }
 
@@ -230,26 +198,6 @@ nav .search .fa + .fa {
   cursor: pointer;
 }
 
-/* .main_content .card:hover .btn {
-  background-color: #2aa73a;
-  color: #fff;
-}
- */
-
-/* .btn {
-  width: 130px;
-  height: 35px;
-  font-size: 14px;
-  border-radius: 35px;
-  background-color: #2d343e;
-  color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  position: relative;
-  -webkit-transition: background-color .3s ease;
-  transition: background-color .3s ease;
-  overflow: hidden;
-} */
-
 .footer {
   width: 100%;
   -webkit-box-pack: justify;
@@ -270,7 +218,7 @@ nav .search .fa + .fa {
   cursor: pointer;
 }
 
-.footer .social .fa+.fa {
+.footer .social .fa + .fa {
   margin-left: 15px;
 }
 
@@ -396,12 +344,9 @@ a {
   cursor: pointer;
 } */
 
-
-
 #root {
   background-color: black;
 }
-
 
 .formmain {
   flex: 100%;
@@ -445,8 +390,6 @@ label {
   color: grey;
   font-size: 1.1rem;
   margin-left: 2rem;
-
-
 }
 
 ::placeholder {
