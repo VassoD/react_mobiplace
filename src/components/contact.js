@@ -1,89 +1,130 @@
-import React from "react";
-// import { ButtonInput } from 'react-bootstrap'
-// import { Form } from 'react-bootstrap-validation'
-// import { Button } from 'react-bootstrap';
-// import { Input } from 'react-input-component';
+import React, { useState } from "react";
 
-function Button(props){
-  function handleSubmit(){
-    console.log("");
-  }
-  return(
-    <input id={props.ID} type="submit" value="Submit" onClick={handleSubmit} />
-  );
-}
-function Input(props){
-  function Checker(event){
-    let value = event.target.value;
-    // console.log(value);
-    let i = props.ID.toString();
-    if(i === "name"){
-      var re =  /^[A-Za-z]+$/;
-      let check =  re.test(value);
-      if(check === false)
-        document.getElementById(i).style = "border-bottom : 1px solid red";
-      else
-        document.getElementById(i).style = "border-bottom : 0.1rem solid #00e600";
+function Input(props) {
+  function handleChange(event) {
+    const value = event.target.value;
+    const id = props.ID.toString();
+    let isValid = true;
+
+    if (id === "name") {
+      isValid = /^[A-Za-z]+$/.test(value);
+    } else if (id === "email") {
+      isValid =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+          value
+        );
     }
-    // else if(i === "phone"){
-    //   var number =  /^[0-9]+$/;
-    //   let check =  number.test(value);
-    //   if(value.length < 10 || value.length >10 || check === false)
-    //     document.getElementById(i).style = "border-bottom : 1px solid red";
-    //   else
-    //     document.getElementById(i).style = "border-bottom: 0.1rem solid #00e600";
-    // }
-    else if(i === "email"){
-      var email =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      let check =  email.test(value);
-      if (check === false)
-        document.getElementById(i).style = "border-bottom : 1px solid red";
-      else
-        document.getElementById(i).style = "border-bottom: 0.1rem solid #00e600";
-    }
+
+    const borderStyle = isValid
+      ? "border-bottom: 0.1rem solid #00e600"
+      : "border-bottom: 1px solid red";
+    document.getElementById(id).style = borderStyle;
+
+    props.onChange(value);
   }
-  return(
-    <input autoComplete="off" type={props.type} placeholder={props.hint} id={props.ID} onChange={Checker}/>
+
+  return (
+    <input
+      autoComplete="off"
+      type={props.type}
+      placeholder={props.hint}
+      id={props.ID}
+      onChange={handleChange}
+      value={props.value}
+    />
   );
 }
 
-
+function Button(props) {
+  return (
+    <input id={props.ID} type="submit" value="Submit" onClick={props.onClick} />
+  );
+}
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitStatus, setSubmitStatus] = useState("");
 
-  return(
+  function validateForm() {
+    return (
+      /^[A-Za-z]+$/.test(name) &&
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+        email
+      ) &&
+      message.trim().length > 0
+    );
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (validateForm()) {
+      // Here we would typically send the form data to a server
+      console.log("Form submitted with:", { name, email, message });
+      setSubmitStatus("Form submitted successfully!");
+      // Reset form fields
+      setName("");
+      setEmail("");
+      setMessage("");
+    } else {
+      setSubmitStatus("Please fill all fields correctly.");
+    }
+  }
+
+  return (
     <div className="formmain">
       <div className="leftcontact">
-      <img src="./images/form.png" alt="form"></img>
+        <img src="./images/form.png" alt="form" />
       </div>
-      <form className="main-form" onSubmit = "#">
-        <h1>Contact Us</h1>     <br/>
-        
+      <form className="main-form" onSubmit={handleSubmit}>
+        <h1>Contact Us</h1>
+        <br />
+
         <div>
-          <label>Name</label>     <br/>
-          <Input hint="Enter your name" type="text" ID="name"/> 
+          <label>Name</label>
+          <br />
+          <Input
+            hint="Enter your name"
+            type="text"
+            ID="name"
+            value={name}
+            onChange={setName}
+          />
         </div>
-        
+
         <div className="form-element">
-          <label>Email</label>  <br/>
-          <Input hint="Enter your email" type="email" ID="email"/> 
+          <label>Email</label>
+          <br />
+          <Input
+            hint="Enter your email"
+            type="email"
+            ID="email"
+            value={email}
+            onChange={setEmail}
+          />
         </div>
-        
-        {/* <div className="form-element">
-          <label>Phone</label> <br/>
-          <Input hint="Phone Number" type="text" ID="phone"/>
-        </div>
-         */}
+
         <div className="form-element">
-          <label>Message</label> <br/>
-          <textarea id="msg" rows="5" placeholder="Questions/comments...">
-            </textarea> 
+          <label>Message</label>
+          <br />
+          <textarea
+            id="msg"
+            rows="5"
+            placeholder="Questions/comments..."
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          ></textarea>
         </div>
-        <Button ID="submit">Submit</Button>
-        </form>
+
+        <Button ID="submit" onClick={handleSubmit}>
+          Submit
+        </Button>
+
+        {submitStatus && <p className="submit-status">{submitStatus}</p>}
+      </form>
     </div>
   );
 }
-  
-  export default Contact;
-  
+
+export default Contact;

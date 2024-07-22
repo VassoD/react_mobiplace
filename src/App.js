@@ -1,37 +1,27 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-// import Header from "./components/header";
-import Home from "./Home";
-import Footer from "./components/footer";
-// import Cart from "./components/Cart";
-// import {CartProvider} from "react-use-cart";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
+
 import NavBar from "./components/NavBar";
+import Home from "./Home";
 import Products from "./components/products";
 import Contact from "./components/contact";
-// import "semantic-ui-css/semantic.min.css";
+import Footer from "./components/footer";
 
 function App() {
   return (
-    // <div className="container">
-    /* <Header /> */
-    /* <CartProvider>
-        <Cart />
-      </CartProvider> */
-
     <Router>
-      <NavBar />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/Products" element={<Products />} />
-        <Route exact path="/Contact" element={<Contact />} />
-
-      </Routes>
-      <Footer />
+      <div className="app-container">
+        <NavBar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
