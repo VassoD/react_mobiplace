@@ -75,7 +75,6 @@ Form {
   border: 1px solid #fff;
   padding: 7px;
   color: #fe8033;
-
 }
 
 .intro a:hover {
@@ -87,7 +86,7 @@ Form {
 }
 
 .home_content h1 a {
-  color: #FF0000;
+  color: #ff0000;
   border: 0px;
 }
 
@@ -102,7 +101,6 @@ Form {
 .goto a {
   color: #fe8033;
 }
-
 
 /* nav {
   -webkit-box-pack: justify;
@@ -168,7 +166,6 @@ nav .search .fa + .fa {
   font-size: 13.5vw;
 }
 
-
 .main_content .card {
   width: 30%;
   border-radius: 15px;
@@ -179,8 +176,8 @@ nav .search .fa + .fa {
   position: relative;
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-bottom: 50px;
 }
 
@@ -270,7 +267,7 @@ nav .search .fa + .fa {
   cursor: pointer;
 }
 
-.footer .social .fa+.fa {
+.footer .social .fa + .fa {
   margin-left: 15px;
 }
 
@@ -396,12 +393,9 @@ a {
   cursor: pointer;
 } */
 
-
-
 #root {
   background-color: black;
 }
-
 
 .formmain {
   flex: 100%;
@@ -445,8 +439,6 @@ label {
   color: grey;
   font-size: 1.1rem;
   margin-left: 2rem;
-
-
 }
 
 ::placeholder {
@@ -482,4 +474,79 @@ textarea {
 
 #submit:hover {
   background: linear-gradient(to right, #9cff50, #14b43c);
+}
+
+/* NavBar Cart Styles */
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.white-cart {
+  color: white;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.cart-preview {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.cart-preview-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-preview-item img {
+  margin-right: 10px;
+}
+
+.view-cart-btn {
+  display: block;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
+}
+
+.navbar .rightside a,
+.navbar .rightside .cart-icon {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
 }

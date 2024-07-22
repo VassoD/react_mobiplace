@@ -1,8 +1,13 @@
 import React from "react";
 import product_card from "../data/product_data";
 import Likes from "../Likes";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { useCart } from "../utils/cartContext";
 
 function Products() {
+  const { addToCart } = useCart();
+
   const productItems = product_card.map((item) => {
     const searchYoutubeQuery = item.product_name.replace(" ", "+");
     const searchYoutubeUrl = `https://www.youtube.com/results?search_query=${searchYoutubeQuery}`;
@@ -18,6 +23,9 @@ function Products() {
           <h2>{item.product_name}</h2>
           <p>{item.description}</p>
           <Likes />
+          <button className="add-to-cart-btn" onClick={() => addToCart(item)}>
+            <FontAwesomeIcon icon={faCartPlus} /> Add to Cart
+          </button>
         </div>
       </div>
     );

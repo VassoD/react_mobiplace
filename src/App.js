@@ -4,25 +4,30 @@ import "./App.css";
 
 import NavBar from "./components/NavBar";
 import Home from "./Home";
-import Products from "./components/products";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
+import Products from "./components/Products";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { CartProvider } from "./utils/cartContext";
+import Cart from "./components/Cart";
 
 function App() {
   return (
-    <Router>
-      <div className="app-container">
-        <NavBar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <CartProvider>
+      <Router>
+        <div className="app-container">
+          <NavBar />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/cart" element={<Cart />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </CartProvider>
   );
 }
 
